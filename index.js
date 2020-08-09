@@ -7,7 +7,8 @@ ex) const dayofday (x)
 const daysOfWeek = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun",true];
 
 console.log(daysOfWeek[2]);
-*/
+
+//object
 const kangInfo = {
     name:"KangMan",
     age:26,
@@ -18,3 +19,50 @@ const kangInfo = {
 };
 
 console.log(kangInfo);
+
+//function
+function sayHello(name, age){
+    console.log('Hello!', name, "you have", age,"years of age.");
+}
+
+sayHello("KangMan", 15);
+
+function sayHello(name, age){
+    return `Hello ${name} you are ${age} years old.`;
+}
+
+const greetKangMan = sayHello('KangMan',26);
+console.log(greetKangMan);
+
+//calculator
+const calculator ={
+  plus: function(a,b){
+    return a+b;
+  },
+  minus: function(a,b){
+    return a-b;
+  },
+  mult: function(a,b){
+    return a*b;
+  },
+  div: function(a,b){
+    return a/b;
+  },
+  square: function(a,b){
+    return a**b;
+  }
+}
+
+const plus = calculator.plus(5,5);
+const minus = calculator.minus(5,2);
+const mult = calculator.mult(3,3);
+const div = calculator.div(9,3);
+const square = calculator.square(3,3);
+console.log(plus,minus,mult,div,square);
+*/
+
+const title = document.querySelector("#title");
+title.innerHTML = "Hi From JS!";
+title.style.color = "red";
+document.title = 'I own you now';
+console.dir(document);
